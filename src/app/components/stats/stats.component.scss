@@ -1,0 +1,43 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+  width: fit-content;
+
+  &__header {
+    margin: 0;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__pie {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__green {
+    display: inline-block;
+    background-color: #7bdf01;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__red {
+    display: inline-block;
+    background-color: #ff0000;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__btn {}
+}

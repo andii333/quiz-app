@@ -1,0 +1,15 @@
+<div class="stats">
+  <h3>Results</h3>
+  <p class="stats__text">Time: {{time | timer}}</p>
+  <p class="stats__text">Points: {{score}}</p>
+  <p class="stats__text">Maximum possible points: {{maxscore}}</p>
+  <p class="stats__text">Percentage of points: {{pointPercent}}%</p>
+  <p class="stats__text">Amount of correct answers: {{correct}}</p>
+  <p class="stats__text">Amount of incorrect answers:{{incorrect}}</p>
+  <p class="stats__text">Amount of questions: {{amount}}</p>
+  <p class="stats__text">Percent of correct answers: {{questionPercent}}%</p>
+  <div class="stats__btns">
+    <button class="btn" routerLink="/home">Go to the list of quizzes</button>
+    <button class="btn" routerLink="/stats">Show general statistics</button>
+  </div>
+</div>

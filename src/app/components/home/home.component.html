@@ -1,0 +1,15 @@
+<h1 class="container__header">Quizzes</h1>
+<div class="container" *ngIf="(quizzes$ | async)  as quizzes">
+  <div class="container__quiz-box" *ngFor="let quiz of quizzes">
+    <div class="container__quiz">
+      <span class="container__text">Name: {{quiz.categoryName}}</span>
+      <span class="container__text">Amount of questions:{{quiz.questionsAmount}}</span>
+    </div>
+    <button class="container__btn btn" (click)="play(quiz.categoryId)">Play</button>
+  </div>
+    <button class="container__btn btn" toolTip="Random quiz" *ngIf="downloading; else download" (click)="play()">I'm lucky</button>
+</div>
+
+<ng-template #download>
+  Pleas wait while the data is being downloaded
+</ng-template>

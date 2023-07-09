@@ -1,0 +1,17 @@
+<div class="statistics">
+  <h3 class="statistics__header">General statistics</h3>
+  <p class="statistics__text">How many quizzes were played: {{amounQuizzes}}</p>
+  <p class="statistics__text">How many questions have been answered: {{amounQuestions}}</p>
+  <p class="statistics__text">Average time of answering quizzes: {{sumTime | timer}}</p>
+  <div class="statistics__pie" [ngStyle]="{'background': pie}"></div>
+  <div class="statistics__row">
+    <div class="statistics__green"></div>
+    <span class="statistics__text">Questions were answered correctly: {{correctPercent}}%</span>
+  </div>
+  <div class="statistics__row">
+    <div class="statistics__red"></div>
+    <span class="statistics__text">Questions were answered wrong: {{incorrectPercent}}%</span>
+  </div>
+  <button class="statistics__btn btn" routerLink="/home">Go to Quizzes list</button>
+</div>
+
